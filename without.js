@@ -35,7 +35,7 @@ const without = function (arr1, arr2) {
   return newArray
 };
 
-//Testing withour function
+//Testing without function
 //console.log(without([1, 2, 3], [1])) // => [2, 3]
 //console.log(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
 
