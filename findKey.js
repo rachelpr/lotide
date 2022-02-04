@@ -40,16 +40,19 @@ const findKey = function (object, callback) {
 //   "Akelarre": { stars: 3 }
 // }, x => x.stars === 2)) // => "noma"
 
-const restaurantRatings = {
-  "Blue Hill": { stars: 1 },
-  "Akaleri": { stars: 3 },
-  "noma": { stars: 2 },
-  "elBulli": { stars: 3 },
-  "Ora": { stars: 2 },
-  "Akelarre": { stars: 3 }
-}
-const results1 = findKey(restaurantRatings, x => x.stars === 2)
-console.log(results1)
 
-assertEqual(results1, "noma")
-assertEqual(results1, "elBulli")
+//TEST CODE
+// const restaurantRatings = {
+//   "Blue Hill": { stars: 1 },
+//   "Akaleri": { stars: 3 },
+//   "noma": { stars: 2 },
+//   "elBulli": { stars: 3 },
+//   "Ora": { stars: 2 },
+//   "Akelarre": { stars: 3 }
+// }
+// const results1 = findKey(restaurantRatings, x => x.stars === 2)
+// console.log(results1)
+
+// assertEqual(results1, "noma")
+// assertEqual(results1, "elBulli")
+// assertEqual(results1, "")
