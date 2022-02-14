@@ -1,4 +1,5 @@
-const eqArray = function (arr1, arr2) {
+
+const eqArrays = function (arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -9,9 +10,9 @@ const eqArray = function (arr1, arr2) {
   }
   return true;
 };
-eqArray([1, 2, 3], [1, 2, 3]) // => true
-eqArray([1, 2, 3], [3, 2, 1]); // => false
-eqArray(["1", "2", "3"], ["1", "2", "3"]); // => true
-eqArray(["1", "2", "3"], ["1", "2", 3]); // => false
+
+module.exports = eqArrays
+
+
 
 
