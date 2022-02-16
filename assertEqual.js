@@ -1,4 +1,4 @@
-// assertEqual function that will test if two objects are equal
+// assertEqual function that will test if two values are equal
 const assertEqual = function(actual, expected) {
   //this checks if actual is the same as expected
   if (actual === expected) {
