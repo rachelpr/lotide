@@ -1,15 +1,3 @@
-// assertEqual function that will test if two objects are equal
-const assertEqual = function (actual, expected) {
-  //this checks if actual is the same as expected
-  if (actual === expected) {
-    //outputs they are the same
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-    // if they aren't the same
-  } else {
-    //tells us they aren't
-    console.log(`❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
 
 const countOnly = function (allItems, itemsToCount) {
   //defining an empty object
@@ -23,28 +11,11 @@ const countOnly = function (allItems, itemsToCount) {
         results[item] += 1;
         //else the results[item] counter remains at 1
       } else {
-        results[item] = 1
+        results[item] = 1;
       }
     }
   }
   return results;
 };
 
-const firstNames = [
-  "Karl",
-  "Salima",
-  "Agouhanna",
-  "Fang",
-  "Kavith",
-  "Jason",
-  "Salima",
-  "Fang",
-  "Joe"
-];
-
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
-
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
-assertEqual(result1["Agouhanna"], undefined);
+module.exports = countOnly
