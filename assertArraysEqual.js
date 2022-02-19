@@ -1,4 +1,4 @@
-
+//A function that will take in two arrays and console.log an appropriate message to the console.
 const eqArray = require("./eqArrays")
 
 const assertArraysEqual = function (arr1, arr2) {

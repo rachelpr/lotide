@@ -14,8 +14,4 @@ describe("#tail", () => {
 })
 
 
-// const result = tail([1]);
-// assertEqual(result.length[1])
-// assertEqual(result[0], []);
-
 

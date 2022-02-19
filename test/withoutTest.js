@@ -2,8 +2,6 @@ const assertArraysEqual = require("../assertArraysEqual")
 const without = require("../without")
 
 //Testing without function
-//console.log(without([1, 2, 3], [1])) // => [2, 3]
-//console.log(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
 
 
 //TEST CODE
@@ -24,3 +22,5 @@ assertArraysEqual(withoutWord, ["hello", "world", "lighthouse"]);
 //Testing with removing a word - this fails
 withoutWord = without(words, ["hello"]);
 assertArraysEqual(withoutWord, ["hello", "world", "lighthouse"]);
+
+assertArraysEqual(without(["1", "1", "1", "2", "3", "1" , "1"], ["1", 2, "3"]), ["2"])

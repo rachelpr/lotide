@@ -1,4 +1,4 @@
-
+//A function that takes in an array that contains elements including nested array of elements and returns a flattened version of the array.
 const flatten = function (arr1) {
   let flattened = []
   for (let i = 0; i < arr1.length; i++) {
